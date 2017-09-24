@@ -1,0 +1,98 @@
+<!doctype html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Honey">
+  <meta name="keywords" content="hi,test">
+  <meta name="description" content="this is a practice">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>This is a test!</title>
+
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#" title="Home">HOME</a></li>
+      <li><a href="#band" title="Band">BAND</a></li>
+      <li><a href="#tour" title="Tour">TOUR</a></li>
+      <li><a href="#contact" title="Contact">CONTACT</a></li>
+      <li><a href="#" title="More">MORE</a></li>
+    </ul>
+  </nav>
+  <!-- Slide show-->
+  <section>
+    <img class="slide" src="https://www.w3schools.com/w3images/ny.jpg" alt="first" style="width: 100%;height: 470px">
+    <img class="slide" src="https://www.w3schools.com/w3images/la.jpg" alt="first" style="width: 100%;height: 470px">
+    <img class="slide" src="https://www.w3schools.com/w3images/chicago.jpg" alt="first" style="width: 100%;height: 470px">
+  </section>
+  <script>
+    var j=0;
+    carousel();
+
+    function carousel(){
+    var i;
+    var x= document.getElementsByClassName("slide");
+    for (i = 0; i < x.length; i++)
+    {
+      x[i].style.display = "none";
+    }
+    j++;
+    if(j > x.length) {j = 1}
+    x[j-1].style.display="block";
+    setTimeout(carousel, 3000);
+    }
+  </script>
+
+  <section id="band" class="contain center" style="max-width: 900px">
+      <p class="title"> THE BAND </p>
+      <p class="subtitle"> <em> We love music</em> </p>
+      <p class="text">
+         A musical ensemble, also known as a music group or musical group, is a group of people who perform instrumental or vocal music, with the ensemble typically known by a distinct name. Some music ensembles consist solely of instruments, such as the jazz quartet or the orchestra. Some music ensembles consist solely of singers, such as choirs and doo wop groups. In both popular music and classical music, there are ensembles in which both instrumentalists and singers perform, such as the rock band or the Baroque chamber group for basso continuo (harpsichord and cello) and one or more singers. In classical music, trios or quartets either blend the sounds of musical instrument families (such as piano, strings, and wind instruments) or group together instruments from the same instrument family, such as string ensembles (e.g., string quartet) or wind ensembles
+       </p>
+  </section>
+
+  <section style="display:table;background-color: gray; width: 100%;">
+    <div class="gallery">
+    <h3> this is paul </h3>
+    <img src="https://www.w3schools.com/w3images/bandmember.jpg" style="width:100%">
+    </div>
+    <div class="gallery">
+    <h3> this is paul </h3>
+    <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="" style="width:100%">
+    </div>
+    <div class="gallery">
+    <h3> this is paul </h3>
+    <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="" style="width:100%">
+    </div>
+  </section>
+
+  <section id="contact" style=" background-color: #f2f2f2">
+    <div class="container" style="margin:auto; width: 60%">
+    <form action="/action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+    </form>
+    </div>
+  </section>
+
+  <footer style="background-color: black; color:white; padding: 20px">
+  <p class="subtitle"> All rights are reserved to Hanie Jafari</p>
+  </footer>
+
+</body>

@@ -1,0 +1,109 @@
+
+html{
+  box-sizing: border-box;
+}
+*,*:before,*:after{
+  box-sizing: inherit;
+}
+body {
+ margin-top: 0px;
+ margin-right: 0px;
+ margin-bottom: 0px;
+ margin-left: 0px
+}
+nav{
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  float: left;
+}
+li a{
+  padding: 10px;
+  color: white;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-family: arial,sans-serif;
+}
+li a:hover {
+    background-color: gray;
+}
+.title{
+  padding: 10px;
+  text-align: center;
+  font-family: arial;
+  font-size: 30px;
+}
+.subtitle{
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  color: gray;
+}
+.text{
+  font-size: 15px;
+  color: black;
+  font-family: "Lato", sans-serif;
+  text-align: justify;
+  padding: 10px 120px 30px 120px;
+}
+.gallery{
+float:left;
+width: 33%;
+}
+.gallery img{
+padding: 0 18px;
+
+}
+.contain{
+  display:table;clear:both;
+  padding:10px 10px;
+}
+.center{
+margin: auto;
+}
+h3 {
+  color:yellow;
+  font-family: arial;
+  text-align: center;
+  text-decoration: none;
+}
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
